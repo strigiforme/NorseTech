@@ -1,5 +1,11 @@
 //items
 item.wooden_battleaxe.name=Wooden Battleaxe
+item.cold_iron_ingot.name=Cold Iron Ingot
 
 //blocks
 tile.peat.name=Peat
+tile.timber.name=Timber
+tile.shingle.name=Shingles
+
+//creative tab
+itemGroup.tabNorseTech=Norse Technology

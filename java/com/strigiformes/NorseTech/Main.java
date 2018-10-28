@@ -1,6 +1,9 @@
 package com.strigiformes.NorseTech;
 
+import com.strigiformes.NorseTech.init.ModItems;
 import com.strigiformes.NorseTech.proxy.CommonProxy;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -35,4 +38,10 @@ public class Main {
 
     }
 
+    public static CreativeTabs tabNorseTech = new CreativeTabs("tab_norse_tech") {
+        @Override
+        public ItemStack getTabIconItem() {
+            return new ItemStack(ModItems.cold_iron_ingot);
+        }
+    };
 }
