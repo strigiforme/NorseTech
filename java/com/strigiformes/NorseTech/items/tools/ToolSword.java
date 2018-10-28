@@ -1,17 +1,18 @@
-package com.strigiformes.NorseTech.items;
+package com.strigiformes.NorseTech.items.tools;
 
 import com.strigiformes.NorseTech.Main;
 import com.strigiformes.NorseTech.init.ModItems;
 import com.strigiformes.NorseTech.util.IHasModel;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
+import net.minecraft.item.ItemSword;
 
-public class ItemBase extends Item implements IHasModel {
+public class ToolSword extends ItemSword implements IHasModel {
 
-    public ItemBase(String name){
+    public ToolSword(String name, ToolMaterial material) {
+        super(material);
         setUnlocalizedName(name);
         setRegistryName(name);
-        setCreativeTab(Main.tabNorseTech);
+        setCreativeTab(CreativeTabs.COMBAT);
 
         //adding item to mod items
         ModItems.ITEMS.add(this);
